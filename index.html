@@ -48,9 +48,9 @@
                 <li>I am awarded Alberta Innovate Graduate Student Scholarship ($62,000CAD).</li>
                 <li>I passed my Ph.D. Candidacy Oral exam.</li>
                 <li>One paper is accepted by <b>IJCV</b>.</li>
-                <li>I achieved Baidu Scholarship Finalist (Top 20 in the world).</li>
+                <li>I achieved Baidu Scholarship Finalist (Top 20 worldwide).</li>
                 <li>I achieved Floyd Derkat Graduate Award in Artificial Intelligence and Machine Learning ($5,000CAD).</li>
-                <li>One paper is accepted by <b>ICLR 2022</b>.</li>
+                <li>Two papers are accepted by <b>ICLR 2022</b> and <b>CVPR 2022</b>.</li>
               </div>
             </ul>
           </td>
@@ -233,6 +233,45 @@
             </td>
           </tr>		
 
+          <tr onmouseout="DCF_stop()" onmouseover="DCF_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='DCF_image'>
+                  <img src='images/DCF_after.png' width="160"></div>
+                <img src='images/DCF_before.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function DCF_start() {
+                  document.getElementById('DCF_image').style.opacity = "1";
+                }
+
+                function DCF_stop() {
+                  document.getElementById('DCF_image').style.opacity = "0";
+                }
+                DCF_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Ji_Calibrated_RGB-D_Salient_Object_Detection_CVPR_2021_paper.pdf">
+                <papertitle>Calibrated RGB-D Salient Object Detection</papertitle>
+              </a>
+              <br>
+              <strong>Wei Ji</strong>,
+              Jingjing Li, Shuang Yu, Miao Zhang, Yongri Piao, Shunyu Yao, Qi Bi, Yefeng Zheng, Huchuan Lu, Li Cheng
+              <br>
+              <em>CVPR</em>, 2021 &nbsp (Extended to IJCV)
+              <br>
+               <a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Ji_Calibrated_RGB-D_Salient_Object_Detection_CVPR_2021_paper.pdf">paper</a>
+               /
+               <a href="https://link.springer.com/article/10.1007/s11263-022-01734-1">long version</a>
+               /
+               <a href="https://github.com/jiwei0921/DCF">code repository</a>
+              <p></p>
+              <p>
+                We propose a Depth Calibration and Fusion method, where it is able to calibrate the depth image and correcting the latent bias in the original depth maps, and effectively aggregate multi-modal complementary information. Its effectiveness and scalability are demonstrated with extensive experiments on five public benchmarks. </p>
+            </td>
+          </tr>
+
 
             <tr onmouseout="CAT_stop()" onmouseover="CAT_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -307,6 +346,45 @@
               <p></p>
               <p>
                 We propose an effective deep multiple instance learning framework that integrates the instance contribution from both local and global scales. It has been demonstrated to be scalable and versatile across different CNNs and medical tasks.
+              </p>
+            </td>
+          </tr>
+
+
+          <tr onmouseout="ECCV_stop()" onmouseover="ECCV_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='ECCV_image'>
+                  <img src='images/conet_after.png' width="160"></div>
+                <img src='images/conet_before.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function ECCV_start() {
+                  document.getElementById('ECCV_image').style.opacity = "1";
+                }
+
+                function ECCV_stop() {
+                  document.getElementById('ECCV_image').style.opacity = "0";
+                }
+                ECCV_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/pdf/2007.11782.pdf">
+                <papertitle>Accurate RGB-D Salient Object Detection via Collaborative Learning</papertitle>
+              </a>
+              <br>
+              <strong>Wei Ji</strong>,
+              Jingjing Li, Miao Zhang, Yongri Piao, Huchuan Lu
+              <br>
+              <em>ECCV</em>, 2020
+              <br>
+               <a href="https://arxiv.org/pdf/2007.11782.pdf">paper</a>
+               /
+               <a href="https://github.com/jiwei0921/CoNet/">code repository</a>
+              <p></p>
+              <p>
+                We introduce a collaborative learning scheme where three mutual-benefit tasks (saliency, depth, and edge) work together to improve internal characteristics. This results in accurate detection with sharp boundaries and faster speeds, while avoiding extra depth input during inference.
               </p>
             </td>
           </tr>
