@@ -20,7 +20,7 @@
               <p style="text-align:center">
                 <name>Wei Ji</name>
               </p>
-              <p>I am now a Ph.D. student in Computer Engineering at University of Alberta, where I am fortunate to be supervised by <a href="https://scholar.google.com/citations?user=9IRFiEQAAAAJ&hl=en">Prof. Li Cheng</a> in VLLab. I also worked as a visiting Ph.D. student at Johns Hopkins University, collaborating with <a href="https://www.zongweiz.com/">Dr. Zongwei Zhou</a> and <a href="https://www.cs.jhu.edu/~ayuille/">Prof. Alan L. Yuille</a>. In addition, I have gained industry experience at Samsung Research America, ByteDance, and Tencent.
+              <p>I am now a Ph.D. student in Computer Engineering at University of Alberta, where I am fortunate to be supervised by <a href="https://scholar.google.com/citations?user=9IRFiEQAAAAJ&hl=en">Prof. Li Cheng</a> in VLLab. I also worked as a visiting Ph.D. student at Johns Hopkins University, collaborating with <a href="https://www.zongweiz.com/">Dr. Zongwei Zhou</a> and <a href="https://scholar.google.com/citations?user=FJ-huxgAAAAJ&hl=en">Prof. Alan Yuille</a>. In addition, I have gained industry experience at Samsung Research America, ByteDance, and Tencent.
               </p>
               <p>
                 My research focuses on the fundamental aspects of Computer Vision, particularly in the areas of detection, segmentation, and multi-modal robust learning. My goal is to develop intelligent visual perception systems capable of accurately modeling scene representation and widely applying to real-world scenarios. Application cases of my work include medical diagnosis systems, robot obstacle avoidance, safer autonomous vehicles, and portrait editor tools.
@@ -75,6 +75,45 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     
 
+
+          <tr onmouseout="MVSS_stop()" onmouseover="MVSS_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='MVSS_image'>
+                  <img src='images/MVSS_after.png' width="160"></div>
+                <img src='images/MVSS_before.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function MVSS_start() {
+                  document.getElementById('MVSS_image').style.opacity = "1";
+                }
+
+                function MVSS_stop() {
+                  document.getElementById('MVSS_image').style.opacity = "0";
+                }
+                MVSS_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/pdf/2205.07179.pdf">
+                <papertitle>Multispectral Video Semantic Segmentation: A Benchmark Dataset and Baseline</papertitle>
+              </a>
+              <br>
+              <strong>Wei Ji</strong>,
+              Jingjing Li, Cheng Bian, Zongwei Zhou, Jiaying Zhao, Alan Yuille, Li Cheng
+              <br>
+              <em>CVPR</em>, 2023
+              <br>
+               <a href="https://arxiv.org/pdf/2205.07179.pdf">paper</a>
+               /
+               <a href="https://github.com/jiwei0921/Multispectral-Video-Semantic-Segmentation">code repository</a>
+              <p></p>
+              <p>
+                  We set out to address a relatively new task of semantic segmentation of multispectral video input, i.e., MVSS. To this end, an in-house MVSeg benchmark dataset and a dedicated baseline are curated and developed. This is expected to serve as a good starting point for future advancements in the MVSS task.
+              </p>
+            </td>
+          </tr>
+
             <tr onmouseout="rgbt_stop()" onmouseover="rgbt_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
@@ -113,43 +152,6 @@
               </tr>
 
 
-            <tr onmouseout="MVSS_stop()" onmouseover="MVSS_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='MVSS_image'>
-                      <img src='images/MVSS_after.png' width="160"></div>
-                    <img src='images/MVSS_before.png' width="160">
-                  </div>
-                  <script type="text/javascript">
-                    function MVSS_start() {
-                      document.getElementById('MVSS_image').style.opacity = "1";
-                    }
-    
-                    function MVSS_stop() {
-                      document.getElementById('MVSS_image').style.opacity = "0";
-                    }
-                    MVSS_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://arxiv.org/pdf/2205.07179.pdf">
-                    <papertitle>Multispectral Video Semantic Segmentation: A Benchmark Dataset and Baseline</papertitle>
-                  </a>
-                  <br>
-                  <strong>Wei Ji</strong>,
-                  Jingjing Li, Cheng Bian, Zongwei Zhou, Jiaying Zhao, Alan L. Yuille, Li Cheng
-                  <br>
-                  <em>CVPR</em>, 2023
-                  <br>
-                   <a href="https://arxiv.org/pdf/2205.07179.pdf">paper</a>
-                   /
-                   <a href="https://github.com/jiwei0921/Multispectral-Video-Semantic-Segmentation">code repository</a>
-                  <p></p>
-                  <p>
-                      We set out to address a relatively new task of semantic segmentation of multispectral video input, i.e., MVSS. To this end, an in-house MVSS benchmark dataset and a dedicated baseline are curated and developed. This is expected to serve as a good starting point for future advancements in the MVSS task.
-                  </p>
-                </td>
-              </tr>
 
           
             <tr onmouseout="DSU_stop()" onmouseover="DSU_start()">
