@@ -10,6 +10,26 @@
 	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
 </head>
 
+<head>
+    <style>
+        .video-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .video {
+            width: 48%; 
+        }
+        .caption {
+            text-align: center;
+            font-weight: bold;
+        }
+        .text {
+            text-align: left;
+        }
+    </style>
+</head>
+
 <body>
   <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr style="padding:0px">
@@ -44,22 +64,23 @@
           <td style="padding:20px;width:100%;vertical-align:middle">
             <heading>Recent News</heading>
             <ul>
-                <li>Two papers are accepted by <b>ICCV 2023</b> and <b>ACM Multimedia 2023</b>, respectively.</li>
-                <li>Our paper is selected as Best Paper on <em>VISION</em> workshop at CVPR 2023.</li>
+                <li>One paper is accepted by <b>NeurIPS 2023</b>.</li>  
+                <li>One paper is accepted by <b>ACM Multimedia 2023</b>.</li>
+                <li>One paper is accepted by <b>ICCV 2023</b>.</li>
+                <li>Our paper is selected as <b>Best Paper</b> on <em>VISION</em> workshop at CVPR 2023.</li>
                 <!--<li>Achieved the J Gordin Kaplan Graduate Student Award.</li> -->
                 <li>One paper is accepted by <b>CVPR 2023</b>.</li>
                 <li>Awarded the Alberta Innovates Graduate Student Scholarship.</li>
                 <li>Passed my Ph.D. Candidacy Oral exam.</li>
-                <li>One paper is accepted by <b>IJCV</b>.</li>
+                <!--<li>One paper is accepted by <b>IJCV</b>.</li>
                 <li>Achieved the Floyd Derkat Graduate Award in Artificial Intelligence and Machine Learning.</li>
-                <!--<li>Two papers are accepted by <b>ICLR 2022</b> and <b>CVPR 2022</b>.</li> -->
+                <li>Two papers are accepted by <b>ICLR 2022</b> and <b>CVPR 2022</b>.</li> -->
               </div>
             </ul>
           </td>
         </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
 
 
         
@@ -79,7 +100,7 @@
 
 
 
-          
+        <!--
             <tr onmouseout="rgbt_stop()" onmouseover="rgbt_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
@@ -109,11 +130,10 @@
                   <em>ACM Multimedia</em>, 2023
                   <br>
                   <a href="">Coming Soon</a>
-                    <!--
                    <a href="">paper</a>
                    /
                    <a href="https://github.com/jiwei0921/SemanticRT/">code repository</a>
-                    -->
+                    
                   <p></p>
                   <p>
                     We contribute a large-scale multispectral semantic segmentation dataset, SemanticRT, with 11,371 RGB-Thermal pairs, toward promoting entire and robust scene understanding, especially under adverse conditions. Also, we propose an explicit mechanism toward better modeling of the innate multi-modality characteristics from the RGB and thermal inputs.      </p>
@@ -140,7 +160,7 @@
                     </script>
                   </td>
                   <td style="padding:20px;width:75%;vertical-align:middle">
-                    <a href="">
+                    <a href="https://arxiv.org/pdf/2308.11737.pdf">
                       <papertitle>Animal3D: A Comprehensive Dataset of 3D Animal Pose and Shape</papertitle>
                     </a>
                     <br>
@@ -150,17 +170,54 @@
                     <br>
                     <em>ICCV</em>, 2023
                     <br>
-                    <a href="">Coming Soon</a>
-                    <!--
-                     <a href="">paper</a>
-                     /
-                     <a href="">project website</a>
-                     -->
+                    <a href="https://arxiv.org/pdf/2308.11737.pdf">paper</a>
+                    /
+                    <a href="https://xujiacong.github.io/Animal3D/">project website</a>
                     <p></p>
                     <p>
                       We present Animal3D, the first benchmark for mammal animal 3D pose and shape estimation, with a diverse set of 40 mammal species, and high-quality annotations of 2D keypoints as well as 3D shape and pose parameters of the SMAL model.                </p>
                   </td>
                 </tr>
+          -->
+
+
+          <tr onmouseout="MVSS_stop()" onmouseover="MVSS_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='MVSS_image'>
+                  <img src='images/MVSS_before.png' width="160"></div>
+                <img src='images/MVSS_after.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function MVSS_start() {
+                  document.getElementById('MVSS_image').style.opacity = "1";
+                }
+
+                function MVSS_stop() {
+                  document.getElementById('MVSS_image').style.opacity = "0";
+                }
+                MVSS_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Ji_Multispectral_Video_Semantic_Segmentation_A_Benchmark_Dataset_and_Baseline_CVPR_2023_paper.pdf">
+                <papertitle>Multispectral Video Semantic Segmentation: A Benchmark Dataset and Baseline</papertitle>
+              </a>
+              <br>
+              <strong>Wei Ji</strong>,
+              Jingjing Li, Cheng Bian, Zongwei Zhou, Jiaying Zhao, Alan Yuille, Li Cheng
+              <br>
+              <em>CVPR</em>, 2023
+              <br>
+              <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Ji_Multispectral_Video_Semantic_Segmentation_A_Benchmark_Dataset_and_Baseline_CVPR_2023_paper.pdf">paper</a>
+               /
+               <a href="https://jiwei0921.github.io/Multispectral-Video-Semantic-Segmentation/">project website</a>
+              <p></p>
+              <p>
+                  We set out to address a promising new task of semantic segmentation of multispectral video input, i.e., MVSS. To this end, an in-house MVSeg benchmark dataset and a dedicated baseline are curated and developed. This is expected to serve as a good starting point for future advancements in the MVSS task.
+              </p>
+            </td>
+          </tr>
 
 
             <tr onmouseout="SAM_stop()" onmouseover="SAM_start()">
@@ -202,44 +259,6 @@
             </tr>
 
 
-            <tr onmouseout="MVSS_stop()" onmouseover="MVSS_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='MVSS_image'>
-                      <img src='images/MVSS_before.png' width="160"></div>
-                    <img src='images/MVSS_after.png' width="160">
-                  </div>
-                  <script type="text/javascript">
-                    function MVSS_start() {
-                      document.getElementById('MVSS_image').style.opacity = "1";
-                    }
-    
-                    function MVSS_stop() {
-                      document.getElementById('MVSS_image').style.opacity = "0";
-                    }
-                    MVSS_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Ji_Multispectral_Video_Semantic_Segmentation_A_Benchmark_Dataset_and_Baseline_CVPR_2023_paper.pdf">
-                    <papertitle>Multispectral Video Semantic Segmentation: A Benchmark Dataset and Baseline</papertitle>
-                  </a>
-                  <br>
-                  <strong>Wei Ji</strong>,
-                  Jingjing Li, Cheng Bian, Zongwei Zhou, Jiaying Zhao, Alan Yuille, Li Cheng
-                  <br>
-                  <em>CVPR</em>, 2023
-                  <br>
-                  <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Ji_Multispectral_Video_Semantic_Segmentation_A_Benchmark_Dataset_and_Baseline_CVPR_2023_paper.pdf">paper</a>
-                   /
-                   <a href="https://jiwei0921.github.io/Multispectral-Video-Semantic-Segmentation/">project website</a>
-                  <p></p>
-                  <p>
-                      We set out to address a promising new task of semantic segmentation of multispectral video input, i.e., MVSS. To this end, an in-house MVSeg benchmark dataset and a dedicated baseline are curated and developed. This is expected to serve as a good starting point for future advancements in the MVSS task.
-                  </p>
-                </td>
-              </tr>
-    
           
             <tr onmouseout="DSU_stop()" onmouseover="DSU_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
@@ -558,6 +577,88 @@
 
 
 
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <heading>Application Examples</heading>
+                <p>
+                    I do my best towards engaging in valuable research that is <em>insightful</em>, <em>impactful</em>, or, at the very least, <em>highly practical</em>. Please find examples of its applications below.
+                </p>
+              </td>
+            </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td>
+              <body>
+                <div class="video-container">
+                    <div class="video">
+                        <video width="100%" controls autoplay loop>
+                            <source src="videos/apple_SOD.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="caption">Class-Agnostic Salient Object Segmentation</div>
+                        <div class="text"><a href="https://machinelearning.apple.com/research/salient-object-segmentation">This task</a> 
+                          is characterized by a class-agnostic nature.
+                          Unlike semantic segmentation, which typically restricts its outputs to a fixed set of categories, 
+                          it enables the handling of diverse and arbitrary objects. 
+                          <strong>[IJCV'22, CVPR'21]</strong> 
+                        </div>
+                    </div>
+                    <div class="video">
+                        <video width="100%" controls autoplay loop>
+                            <source src="videos/background.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="caption">Background Removal/Substitution</div>
+                        <div class="text">
+                            <a href="https://github.com/renatoviolin/bg-remove-augment">This task</a> 
+                            is capable of separating the foreground object from its initial background and replace it with an alternative backdrop. 
+                            Its application cases involve video conferencing and image editing. 
+                            <strong>[CVPRW'23, ICLR'22]</strong>
+                        </div>
+                    </div>
+                </div>
+            </body>
+          </td>
+          </tr>
+          <tr>
+            <td>
+              <body>
+                <div class="video-container">
+                    <div class="video">
+                        <video width="100%" controls autoplay loop>
+                            <source src="videos/MVSS.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="caption">Perception of Complex Scene</div>
+                        <div class="text">
+                            <a href="https://jiwei0921.github.io/Multispectral-Video-Semantic-Segmentation/">This task</a> 
+                            involves understanding and parsing objects, regions, and their relationships in images or video frames, especially in complex or low-light scenarios.
+                            This enhances model's robustness in applications like autonomous driving and nighttime patrols. 
+                            <strong>[CVPR'23, ACM Multimedia'23]</strong>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <video width="100%" controls autoplay loop>
+                            <source src="videos/PolyP.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="caption">Diagnosis of Medical Lesion</div>
+                        <div class="text">
+                          Medical image segmentation (e.g., <a href="https://link.springer.com/chapter/10.1007/978-3-030-87193-2_14">polyp</a>) assists in outlining abnormalities or lesions areas within the body, ensuring accurate treatment delivery and minimizing damage to healthy tissue.
+                          Typically, it can aid in diagnosing conditions like tumors and organ diseases.
+                          <strong>[CVPR'21, MICCAI'21]</strong> 
+                        </div>
+                    </div>
+                </div>
+            </body>
+          </td>
+          </tr>
+        </table>
+
+
           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tr>
               <td width="100%" valign="middle">
@@ -598,7 +699,7 @@
             <td style="padding:0px">
               <br>
               <p style="text-align:right;font-size:small;">
-                  This website template is borrowed from <a href="https://jonbarron.info/">Jon Barron's Website</a>.
+                Modified from <a href="https://jonbarron.info/">Jon Barron</a>.
               </p>
             </td>
           </tr>
