@@ -1,4 +1,4 @@
-This website template is borrowed from https://jonbarron.info/.
+Wei's personal website.
 
 # Step 1-3:
 + git add --all
